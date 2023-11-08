@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient( rgb(24, 42, 41), rgb(173, 212, 224));
+}
+.container{
+    width: 400px;
+    margin: 100px auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    gap: 1rem;
+}
+.container h1{
+    padding-top: 1.2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    color: white;
+}
+ul{
+    padding: 20px;
+}
+li{
+    list-style-type: none;
+    padding: 10px 40px;
+    background-color: #fff;
+    margin-top: 2px;
+    text-align: center;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
