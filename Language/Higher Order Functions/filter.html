@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+            span{
+                color: crimson;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Richest Actor: <span id="name"></span></h1>
+        <script>
+            const actors = [
+                { name: "johnny", networth: 29000000 },
+                { name: "amber", networth: 1009099 },
+                { name: "leonardo", networth: 98000000 },
+                {name:'matt demon',networth:1700000000}
+            ];
+            const output = document.getElementById("name")
+            let result = actors.filter((actor) => actor.networth > 10000000)
+            let names = result.map(acotor => acotor.name)
+            names = names.join(', ')
+            output.innerHTML = names
+        </script>
+    </body>
+</html>
